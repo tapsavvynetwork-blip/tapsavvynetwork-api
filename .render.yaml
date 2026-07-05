@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: tapsavvy-backend
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: "5000"
+      - key: MONGO_URI
+        value: "mongodb+srv://tapsavvynetwork_db_user:x6Bm2YQyIMj9Tp@tapsavvy.v8prrdl.mongodb.net/?appName=tapsavvy"
+      - key: CLOUDINARY_CLOUD_NAME
+        value: "aafxe1ey"
+      - key: CLOUDINARY_API_KEY
+        value: "419842351895249"
+      - key: CLOUDINARY_API_SECRET
+        value: "2HZXQu5BwNEszBPmnhavKKHNFGk"
+      - key: JWT_ACCESS_SECRET
+        value: "your_access_secret"
+      - key: JWT_REFRESH_SECRET
+        value: "your_refresh_secret"
+      - key: JWT_ACCESS_EXPIRES_IN
+        value: "15m"
+      - key: JWT_REFRESH_EXPIRES_IN
+        value: "7d"

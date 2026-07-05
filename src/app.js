@@ -22,5 +22,4 @@ app.use('/api', routes);
 
 app.use(errorHandler);
 
-const PORT = config.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+export default app;
