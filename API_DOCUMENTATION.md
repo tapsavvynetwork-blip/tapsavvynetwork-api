@@ -3,7 +3,7 @@
 This document is a concise API reference for frontend developers. It lists routes, expected request formats, responses, and example requests for common flows.
 
 **General**
-- **Base URL:** https://tapsavvynetwork-api.onrender.com/api
+- **Base URL:** [https://tapsavvynetwork-api.onrender.com/api](https://api.tapsavvynetwork.com/api)
 - **Auth header:** `Authorization: Bearer <accessToken>` for protected endpoints.
 - **Response envelope:** All endpoints return the following JSON envelope:
 
